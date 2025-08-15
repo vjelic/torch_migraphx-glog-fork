@@ -1,0 +1,81 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-30e8bbd2-8389-4d5f-aacd-a9bb7c7eead5",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe vulnerability \"Potential Insecurity in Function - Consider ast.literal_eval for Safety\" in Python refers to the potential security risks associated with the use of the `eval()` function. The `eval()` function takes a string and evaluates it as a Python expression. This can be dangerous if the string is user-supplied or from an untrusted source, as it can lead to arbitrary code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, consider using `ast.literal_eval()` instead of `eval()`. The `ast.literal_eval()` function safely parses and evaluates an expression node or a string containing a Python literal or container display. It is safer than `eval()` because it only evaluates Python literals and does not evaluate complex expressions or function calls.\n\n## Source Code Fix Recommendation\n\nReplace the use of `eval()` with `ast.literal_eval()`:\n\n```python\nimport ast\n\nexc_type = ast.literal_eval(name_of_exc)  # Safe alternative to eval()\n```\n\n## Library Dependencies\n\nThe code example requires the `ast` library, which is a built-in Python library and does not need to be installed separately.\n\n## OWASP Resources\n\n\n## Common Weakness Enumeration (CWE)\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)\n\nPlease note that the links provided are active and accessible to anonymous users at the time of writing this report."
+              },
+              "properties": {
+                "tags": [
+                  "B307"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-30e8bbd2-8389-4d5f-aacd-a9bb7c7eead5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Potential Insecurity in Function - Consider ast.literal_eval for Safety"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/torch_migraphx/fx/tracer/acc_tracer/acc_tracer.py"
+                },
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 24,
+                  "endLine": 165,
+                  "endColumn": 41,
+                  "snippet": {
+                    "text": "            exc_type = eval(name_of_exc)  # noqa P204\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 164,
+                  "endLine": 166,
+                  "snippet": {
+                    "text": "        try:\n            exc_type = eval(name_of_exc)  # noqa P204\n        except Exception:\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "HIGH"
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
