@@ -12,7 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "glog-30e8bbd2-8389-4d5f-aacd-a9bb7c7eead5",
+              "id": "glog-95067f7b-22d4-44e7-a8d4-7db3295c5b82",
               "help": {
                 "text": "",
                 "markdown": "## Description\n\nThe vulnerability \"Potential Insecurity in Function - Consider ast.literal_eval for Safety\" in Python refers to the potential security risks associated with the use of the `eval()` function. The `eval()` function takes a string and evaluates it as a Python expression. This can be dangerous if the string is user-supplied or from an untrusted source, as it can lead to arbitrary code execution.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, consider using `ast.literal_eval()` instead of `eval()`. The `ast.literal_eval()` function safely parses and evaluates an expression node or a string containing a Python literal or container display. It is safer than `eval()` because it only evaluates Python literals and does not evaluate complex expressions or function calls.\n\n## Source Code Fix Recommendation\n\nReplace the use of `eval()` with `ast.literal_eval()`:\n\n```python\nimport ast\n\nexc_type = ast.literal_eval(name_of_exc)  # Safe alternative to eval()\n```\n\n## Library Dependencies\n\nThe code example requires the `ast` library, which is a built-in Python library and does not need to be installed separately.\n\n## OWASP Resources\n\n\n## Common Weakness Enumeration (CWE)\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)\n\nPlease note that the links provided are active and accessible to anonymous users at the time of writing this report."
@@ -20,6 +20,18 @@
               "properties": {
                 "tags": [
                   "B307"
+                ]
+              }
+            },
+            {
+              "id": "glog-b40d3739-0204-4b81-80bf-487a680a5ee1",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe `exec` function in Python is a built-in function that is used to execute dynamically created program, which can be a string or object code. If it is a string, the string is parsed as a suite of Python statements which is then executed. If it is an object code, it is simply executed. \n\nThe vulnerability \"Exec Usage Detected\" arises when the `exec` function is used in an insecure manner, which can lead to arbitrary code execution. This can happen if user-supplied input is passed directly to the `exec` function without proper sanitization or validation. This can allow an attacker to execute arbitrary Python code within the application's context, leading to a serious security risk.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, avoid using the `exec` function if possible. If it is necessary to use `exec`, never pass user-supplied input to it without proper sanitization and validation. \n\nConsider using safer alternatives to `exec` such as `ast.literal_eval` for evaluating simple expressions or using built-in functions and libraries for the required functionality.\n\n## Source Code Fix Recommendation\n\nInstead of using `exec`, consider using `ast.literal_eval` which safely parses and evaluates an expression node or a string containing a Python literal or container display. \n\nHere is an example of how to use `ast.literal_eval`:\n\n```python\nimport ast\n\ncode = \"{'test': 1}\"  # noqa P204\nsafe_eval = ast.literal_eval(code)\n```\n\n## Library Dependencies\n\nThe code example does not require any external library dependencies. The `ast` module is part of the Python Standard Library.\n\n## References\n\n- [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B102"
                 ]
               }
             }
@@ -35,7 +47,7 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "glog-30e8bbd2-8389-4d5f-aacd-a9bb7c7eead5",
+          "ruleId": "glog-95067f7b-22d4-44e7-a8d4-7db3295c5b82",
           "kind": "fail",
           "level": "warning",
           "message": {
@@ -61,6 +73,43 @@
                   "endLine": 166,
                   "snippet": {
                     "text": "        try:\n            exc_type = eval(name_of_exc)  # noqa P204\n        except Exception:\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-b40d3739-0204-4b81-80bf-487a680a5ee1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "\"Exec Usage Detected\""
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/torch_migraphx/fx/tracer/acc_tracer/acc_tracer.py"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 9,
+                  "endLine": 92,
+                  "endColumn": 33,
+                  "snippet": {
+                    "text": "        exec(code, globals_dict)  # noqa P204\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 91,
+                  "endLine": 93,
+                  "snippet": {
+                    "text": "        keys_before = set(globals_dict.keys())\n        exec(code, globals_dict)  # noqa P204\n        new_keys = list(set(globals_dict.keys()) - keys_before)\n"
                   }
                 }
               }
