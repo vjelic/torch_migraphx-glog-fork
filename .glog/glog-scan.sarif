@@ -36,30 +36,6 @@
               }
             },
             {
-              "id": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
               "id": "adca1cc4-87db-36c2-901d-5f2decbf0f53",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -84,6 +60,30 @@
               }
             },
             {
+              "id": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
               "id": "97b4ebed-551d-323a-aa8b-5c8583734501",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -104,30 +104,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
-              "id": "8cc988a6-ddcc-312b-9cfe-33a407513f62",
-              "name": "resources.rules.missing-image-version",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-image-version"
-              },
-              "fullDescription": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -204,7 +180,7 @@
               }
             },
             {
-              "id": "241b129a-4a30-3812-8821-a40a6587f8b3",
+              "id": "8cc988a6-ddcc-312b-9cfe-33a407513f62",
               "name": "resources.rules.missing-image-version",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-image-version"
@@ -228,26 +204,26 @@
               }
             },
             {
-              "id": "73c59a21-1f75-35f8-a4da-04cfb231ef89",
-              "name": "resources.rules.missing-pip-no-cache-dir",
+              "id": "241b129a-4a30-3812-8821-a40a6587f8b3",
+              "name": "resources.rules.missing-image-version",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+                "text": "Opengrep Finding: resources.rules.missing-image-version"
               },
               "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+                "text": "Images should be tagged with an explicit version to produce deterministic container images."
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "warning"
               },
               "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+                "text": "Images should be tagged with an explicit version to produce deterministic container images.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Images should be tagged with an explicit version to produce deterministic container images.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3006](https://github.com/hadolint/hadolint/wiki/DL3006)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
+                  "resources.rules.missing-image-version"
                 ]
               }
             },
@@ -300,55 +276,7 @@
               }
             },
             {
-              "id": "c1d7f893-abdd-3d62-8878-b597d222e46c",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
-              "id": "964ede36-e52f-34f0-8ddf-1b4ccb1b1770",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
-              "id": "9fd93785-7489-314a-9e1a-3661cb1972a2",
+              "id": "73c59a21-1f75-35f8-a4da-04cfb231ef89",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
@@ -392,6 +320,78 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.use-workdir"
+                ]
+              }
+            },
+            {
+              "id": "964ede36-e52f-34f0-8ddf-1b4ccb1b1770",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
+              "id": "c1d7f893-abdd-3d62-8878-b597d222e46c",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
+              "id": "9fd93785-7489-314a-9e1a-3661cb1972a2",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
                 ]
               }
             },
@@ -517,30 +517,6 @@
               }
             },
             {
-              "id": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
-              "name": "resources.rules.use-workdir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-workdir"
-              },
-              "fullDescription": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
               "id": "62f3af1f-84c2-36ba-a7f4-9adb813bba31",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -561,6 +537,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
+              "id": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
+              "name": "resources.rules.use-workdir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-workdir"
+              },
+              "fullDescription": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-workdir"
                 ]
               }
             },
@@ -613,6 +613,30 @@
               }
             },
             {
+              "id": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
               "id": "f702c98a-e0bd-329e-942e-ce233d542924",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
@@ -661,31 +685,31 @@
               }
             },
             {
-              "id": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
-              "name": "resources.rules.missing-pip-no-cache-dir",
+              "id": "29a76deb-6228-3ce7-96fc-d94ac6b90426",
+              "name": "resources.rules.dangerous-subprocess-use",
               "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+                "text": "Opengrep Finding: resources.rules.dangerous-subprocess-use"
               },
               "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+                "text": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n"
               },
               "defaultConfiguration": {
                 "enabled": true,
-                "level": "note"
+                "level": "warning"
               },
               "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+                "text": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess](https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess)\n - [https://docs.python.org/3/library/subprocess.html](https://docs.python.org/3/library/subprocess.html)\n - [https://docs.python.org/3/library/shlex.html](https://docs.python.org/3/library/shlex.html)\n"
               },
               "properties": {
                 "precision": "very-high",
                 "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
+                  "resources.rules.dangerous-subprocess-use"
                 ]
               }
             },
             {
-              "id": "29a76deb-6228-3ce7-96fc-d94ac6b90426",
+              "id": "9455f6a4-4bbf-30e4-9725-d71081db6900",
               "name": "resources.rules.dangerous-subprocess-use",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.dangerous-subprocess-use"
@@ -730,30 +754,6 @@
                 "precision": "very-high",
                 "tags": [
                   "trailofbits.python.pickles-in-pytorch.pickles-in-pytorch"
-                ]
-              }
-            },
-            {
-              "id": "9455f6a4-4bbf-30e4-9725-d71081db6900",
-              "name": "resources.rules.dangerous-subprocess-use",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dangerous-subprocess-use"
-              },
-              "fullDescription": {
-                "text": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Detected subprocess function '$FUNC' without a static string. If this data can be\ncontrolled by a malicious actor, it may be an instance of command injection.\nAudit the use of this call to ensure it is not controllable by an external resource.\nYou may consider using 'shlex.escape()'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess](https://stackoverflow.com/questions/3172470/actual-meaning-of-shell-true-in-subprocess)\n - [https://docs.python.org/3/library/subprocess.html](https://docs.python.org/3/library/subprocess.html)\n - [https://docs.python.org/3/library/shlex.html](https://docs.python.org/3/library/shlex.html)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dangerous-subprocess-use"
                 ]
               }
             },
@@ -831,30 +831,6 @@
               }
             },
             {
-              "id": "434bd6a8-d5bd-31f0-9358-00fd5fac622e",
-              "name": "resources.rules.open-never-closed",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.open-never-closed"
-              },
-              "fullDescription": {
-                "text": "file object opened without corresponding close"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.open-never-closed"
-                ]
-              }
-            },
-            {
               "id": "663abd69-99ad-33b1-9cf2-fdd8d05a7888",
               "name": "resources.rules.dlint-catastrophic-redos",
               "shortDescription": {
@@ -875,6 +851,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.dlint-catastrophic-redos"
+                ]
+              }
+            },
+            {
+              "id": "434bd6a8-d5bd-31f0-9358-00fd5fac622e",
+              "name": "resources.rules.open-never-closed",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.open-never-closed"
+              },
+              "fullDescription": {
+                "text": "file object opened without corresponding close"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "file object opened without corresponding close\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "file object opened without corresponding close\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.open-never-closed"
                 ]
               }
             },
@@ -1019,37 +1019,6 @@
           "properties": {}
         },
         {
-          "ruleId": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 11,
-                  "endColumn": 22,
-                  "snippet": {
-                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "477bf277c1dadf95e03e9b623a2a0e38205e6f88abbf720e8ca431eb27bbca3782e1ca9175c5bc614c1013e97688b068229f7ee262ac300face63d05fc514d70_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "adca1cc4-87db-36c2-901d-5f2decbf0f53",
           "kind": "fail",
           "level": "warning",
@@ -1081,6 +1050,37 @@
           "properties": {}
         },
         {
+          "ruleId": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "477bf277c1dadf95e03e9b623a2a0e38205e6f88abbf720e8ca431eb27bbca3782e1ca9175c5bc614c1013e97688b068229f7ee262ac300face63d05fc514d70_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "97b4ebed-551d-323a-aa8b-5c8583734501",
           "kind": "fail",
           "level": "warning",
@@ -1108,37 +1108,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "8d367e50e35761b926f24b347a3d048bb3d45a6c6ee8ccc7b4ff393ac2c97727d657193320b7c89a39455a227b43d9d617dd00cab4ff4da6b36962a79493dcf2_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "8cc988a6-ddcc-312b-9cfe-33a407513f62",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ci/base.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "FROM rocm/pytorch:rocm6.4_ubuntu22.04_py3.10_pytorch_release_2.6.0"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "cca9641113ad7153e2e872ca3a50655cd0937f6b1d565ff3533a52198d853ee5f48ad37688e813af892e817bd6f35dba9645abc93f765bd2c3f81adfb199d158_0"
           },
           "properties": {}
         },
@@ -1236,6 +1205,37 @@
           "properties": {}
         },
         {
+          "ruleId": "8cc988a6-ddcc-312b-9cfe-33a407513f62",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ci/base.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM rocm/pytorch:rocm6.4_ubuntu22.04_py3.10_pytorch_release_2.6.0"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "cca9641113ad7153e2e872ca3a50655cd0937f6b1d565ff3533a52198d853ee5f48ad37688e813af892e817bd6f35dba9645abc93f765bd2c3f81adfb199d158_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "241b129a-4a30-3812-8821-a40a6587f8b3",
           "kind": "fail",
           "level": "warning",
@@ -1263,37 +1263,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "1cd0df76bde995d9b4e3544e588b4a31ef895ffea25aaf13e40b3aac2129521f690e9fd1472d650d49953e2a980375b7bd0310e90d77b77a48d199dba2cf6e5f_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "73c59a21-1f75-35f8-a4da-04cfb231ef89",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip3 install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ci/wheel/build.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 4,
-                  "startColumn": 1,
-                  "endLine": 4,
-                  "endColumn": 26,
-                  "snippet": {
-                    "text": "RUN pip3 install pybind11-global"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "6aba9a8789aef9bba0e724eabb1ff8d4d6d8307b8863b32985b91912b785c28187aa1ae2e9e934e6a85ab1c5729c697e4cf0f0f51419b86b2a06ed8ea6a35293_0"
           },
           "properties": {}
         },
@@ -1360,11 +1329,42 @@
           "properties": {}
         },
         {
-          "ruleId": "c1d7f893-abdd-3d62-8878-b597d222e46c",
+          "ruleId": "73c59a21-1f75-35f8-a4da-04cfb231ef89",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+            "text": "This 'pip3 install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "ci/wheel/build.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 1,
+                  "endLine": 4,
+                  "endColumn": 26,
+                  "snippet": {
+                    "text": "RUN pip3 install pybind11-global"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "6aba9a8789aef9bba0e724eabb1ff8d4d6d8307b8863b32985b91912b785c28187aa1ae2e9e934e6a85ab1c5729c697e4cf0f0f51419b86b2a06ed8ea6a35293_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "116a6b3d-a67b-35d7-8314-a9cd27996d3c",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
           },
           "locations": [
             {
@@ -1374,19 +1374,19 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 9,
+                  "startLine": 11,
                   "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 22,
+                  "endLine": 12,
+                  "endColumn": 10,
                   "snippet": {
-                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
+                    "text": "RUN git clone --single-branch --branch ${MIGRAPHX_BRANCH} --recursive https://github.com/ROCm/AMDMIGraphX.git \\\n    && cd AMDMIGraphX \\"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "0ce624ca9f1345f28f1f5887a4e3dd890fccb9abf908f6ecadc5a976511f5a0c38e0374392659ad4a55e101ce41f19bfb5ff552a1ff7b1384cb167809024f9c6_0"
+            "matchBasedId/v1": "e2f9ca2c592458ba6e247376ec5a3e03ce36c825d5f2b0cb175accc0ed88b93a66c25a9cce7c71690ccfb1874b92b1c94bb0e6a3e3e51e2f99fdbe544126a242_0"
           },
           "properties": {}
         },
@@ -1422,6 +1422,37 @@
           "properties": {}
         },
         {
+          "ruleId": "c1d7f893-abdd-3d62-8878-b597d222e46c",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/dev.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 22,
+                  "snippet": {
+                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "0ce624ca9f1345f28f1f5887a4e3dd890fccb9abf908f6ecadc5a976511f5a0c38e0374392659ad4a55e101ce41f19bfb5ff552a1ff7b1384cb167809024f9c6_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "9fd93785-7489-314a-9e1a-3661cb1972a2",
           "kind": "fail",
           "level": "warning",
@@ -1449,37 +1480,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "18abd2d7f432ed163b8105be09675404097796263c3d5af9403ed7fab588dacd78e2610fa9f6428e4549f58a1234ec0fd966fafd108219ab37025746e08d1bf2_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "116a6b3d-a67b-35d7-8314-a9cd27996d3c",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/dev.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 1,
-                  "endLine": 12,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "RUN git clone --single-branch --branch ${MIGRAPHX_BRANCH} --recursive https://github.com/ROCm/AMDMIGraphX.git \\\n    && cd AMDMIGraphX \\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "e2f9ca2c592458ba6e247376ec5a3e03ce36c825d5f2b0cb175accc0ed88b93a66c25a9cce7c71690ccfb1874b92b1c94bb0e6a3e3e51e2f99fdbe544126a242_0"
           },
           "properties": {}
         },
@@ -1639,37 +1639,6 @@
           "properties": {}
         },
         {
-          "ruleId": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/torchbench.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 1,
-                  "endLine": 29,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "RUN curl -o torchaudio.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/audio.txt &&\\\n    torchaudio_hash=\"$(cat torchaudio.txt)\" && \\\n    git clone https://github.com/pytorch/audio.git &&\\\n    cd audio &&\\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "62f3af1f-84c2-36ba-a7f4-9adb813bba31",
           "kind": "fail",
           "level": "warning",
@@ -1697,6 +1666,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "2cec52b80806ce1e4401eba30e68846bf16db38cb6fb18210c6717532b05a2764e932a80ee75a557d221aa6306396c3030d25316d91a191045b2a9a34fd443b3_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/torchbench.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 29,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "RUN curl -o torchaudio.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/audio.txt &&\\\n    torchaudio_hash=\"$(cat torchaudio.txt)\" && \\\n    git clone https://github.com/pytorch/audio.git &&\\\n    cd audio &&\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_0"
           },
           "properties": {}
         },
@@ -1763,6 +1763,37 @@
           "properties": {}
         },
         {
+          "ruleId": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/torchbench.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 1,
+                  "endLine": 50,
+                  "endColumn": 19,
+                  "snippet": {
+                    "text": "RUN pip install z3-solver"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "35ffd0561240b0d504cf5205756f96ad8ffacc9ef4a266a863fb42f56c66c8046fefc650204503dddda56f35e57eb35777485600718355d05920f0a568f70872_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "f702c98a-e0bd-329e-942e-ce233d542924",
           "kind": "fail",
           "level": "warning",
@@ -1825,37 +1856,6 @@
           "properties": {}
         },
         {
-          "ruleId": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/torchbench.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 50,
-                  "startColumn": 1,
-                  "endLine": 50,
-                  "endColumn": 19,
-                  "snippet": {
-                    "text": "RUN pip install z3-solver"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "35ffd0561240b0d504cf5205756f96ad8ffacc9ef4a266a863fb42f56c66c8046fefc650204503dddda56f35e57eb35777485600718355d05920f0a568f70872_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "29a76deb-6228-3ce7-96fc-d94ac6b90426",
           "kind": "fail",
           "level": "warning",
@@ -1887,37 +1887,6 @@
           "properties": {}
         },
         {
-          "ruleId": "4a034a93-26e0-3e53-ab0b-0a4860a458f2",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "py/torch_migraphx/dynamo/backends.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 74,
-                  "startColumn": 16,
-                  "endLine": 74,
-                  "endColumn": 71,
-                  "snippet": {
-                    "text": "        return torch.load(kwargs[\"load_compiled\"], weights_only=False)"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "a39a84f75fee2da3addbc5c213e1e2fb91b6e773ee25c18145bdf53a5a4854a1346ab63a08acad3739251965560624b5a3c8328fbc8a25f4c0e40bc85d6ce421_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "9455f6a4-4bbf-30e4-9725-d71081db6900",
           "kind": "fail",
           "level": "warning",
@@ -1945,6 +1914,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "ba59c6f1c7772334ba2527de8e1ab3821f368f9bb342447a5dbe182f3ba05009c8992fd3fee003f284ebe5b396d6072d0c7c5e2d164cc531f851f34391df1375_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "4a034a93-26e0-3e53-ab0b-0a4860a458f2",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Functions reliant on pickle can result in arbitrary code execution.  Consider loading from `state_dict`, using fickling, or switching to a safer serialization method like ONNX"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/torch_migraphx/dynamo/backends.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 16,
+                  "endLine": 74,
+                  "endColumn": 71,
+                  "snippet": {
+                    "text": "        return torch.load(kwargs[\"load_compiled\"], weights_only=False)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a39a84f75fee2da3addbc5c213e1e2fb91b6e773ee25c18145bdf53a5a4854a1346ab63a08acad3739251965560624b5a3c8328fbc8a25f4c0e40bc85d6ce421_0"
           },
           "properties": {}
         },
@@ -2042,37 +2042,6 @@
           "properties": {}
         },
         {
-          "ruleId": "434bd6a8-d5bd-31f0-9358-00fd5fac622e",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "file object opened without corresponding close"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "py/torch_migraphx/fx/tracer/acc_tracer/acc_shape_prop.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 42,
-                  "startColumn": 9,
-                  "endLine": 42,
-                  "endColumn": 43,
-                  "snippet": {
-                    "text": "        sys.stderr = open(os.devnull, \"w\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "33b6c30b4a0222542c2d39e5c8a555339eb450c9e92787b4604e03693286a70d665bda4d22ed64856d3684ca70d651729d9796f6f7da18f1e166b1051e081267_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "663abd69-99ad-33b1-9cf2-fdd8d05a7888",
           "kind": "fail",
           "level": "warning",
@@ -2100,6 +2069,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "fc9581ffc220540600a46d7c4f120dc1dde1d90ad3ec367547ccda75c89295a96cd33dc9ed0f15252ea2093ff999c00b860a13c0ab6cfab96a1062260ead64ce_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "434bd6a8-d5bd-31f0-9358-00fd5fac622e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "file object opened without corresponding close"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/torch_migraphx/fx/tracer/acc_tracer/acc_shape_prop.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 9,
+                  "endLine": 42,
+                  "endColumn": 43,
+                  "snippet": {
+                    "text": "        sys.stderr = open(os.devnull, \"w\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "33b6c30b4a0222542c2d39e5c8a555339eb450c9e92787b4604e03693286a70d665bda4d22ed64856d3684ca70d651729d9796f6f7da18f1e166b1051e081267_0"
           },
           "properties": {}
         },
