@@ -12,7 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "adca1cc4-87db-36c2-901d-5f2decbf0f53",
+              "id": "97b4ebed-551d-323a-aa8b-5c8583734501",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-workdir"
@@ -36,31 +36,7 @@
               }
             },
             {
-              "id": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
-                ]
-              }
-            },
-            {
-              "id": "97b4ebed-551d-323a-aa8b-5c8583734501",
+              "id": "adca1cc4-87db-36c2-901d-5f2decbf0f53",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-workdir"
@@ -104,6 +80,54 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.missing-image-version"
+                ]
+              }
+            },
+            {
+              "id": "f01b1b2c-2bb9-3814-aeb2-ad62d05c0349",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
+                ]
+              }
+            },
+            {
+              "id": "874ebf10-b82d-3f92-bfc2-f3da261a710f",
+              "name": "resources.rules.missing-pip-no-cache-dir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
+              },
+              "fullDescription": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "note"
+              },
+              "help": {
+                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.missing-pip-no-cache-dir"
                 ]
               }
             },
@@ -152,30 +176,6 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
-              "id": "874ebf10-b82d-3f92-bfc2-f3da261a710f",
-              "name": "resources.rules.missing-pip-no-cache-dir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.missing-pip-no-cache-dir"
-              },
-              "fullDescription": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "note"
-              },
-              "help": {
-                "text": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "This '$PIP install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3042](https://github.com/hadolint/hadolint/wiki/DL3042)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.missing-pip-no-cache-dir"
                 ]
               }
             },
@@ -541,7 +541,7 @@
               }
             },
             {
-              "id": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
+              "id": "117226cb-d3f1-3c3c-94af-80be3a2c829c",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-workdir"
@@ -565,7 +565,7 @@
               }
             },
             {
-              "id": "117226cb-d3f1-3c3c-94af-80be3a2c829c",
+              "id": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
               "name": "resources.rules.use-workdir",
               "shortDescription": {
                 "text": "Opengrep Finding: resources.rules.use-workdir"
@@ -613,30 +613,6 @@
               }
             },
             {
-              "id": "f702c98a-e0bd-329e-942e-ce233d542924",
-              "name": "resources.rules.use-workdir",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.use-workdir"
-              },
-              "fullDescription": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "warning"
-              },
-              "help": {
-                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.use-workdir"
-                ]
-              }
-            },
-            {
               "id": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
               "name": "resources.rules.missing-pip-no-cache-dir",
               "shortDescription": {
@@ -661,30 +637,6 @@
               }
             },
             {
-              "id": "7c649040-c985-36c5-9630-4d5648496b23",
-              "name": "resources.rules.dlint-catastrophic-redos",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
-              },
-              "fullDescription": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.dlint-catastrophic-redos"
-                ]
-              }
-            },
-            {
               "id": "29a76deb-6228-3ce7-96fc-d94ac6b90426",
               "name": "resources.rules.dangerous-subprocess-use",
               "shortDescription": {
@@ -705,6 +657,54 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.dangerous-subprocess-use"
+                ]
+              }
+            },
+            {
+              "id": "f702c98a-e0bd-329e-942e-ce233d542924",
+              "name": "resources.rules.use-workdir",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.use-workdir"
+              },
+              "fullDescription": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://github.com/hadolint/hadolint/wiki/DL3003](https://github.com/hadolint/hadolint/wiki/DL3003)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.use-workdir"
+                ]
+              }
+            },
+            {
+              "id": "7c649040-c985-36c5-9630-4d5648496b23",
+              "name": "resources.rules.dlint-catastrophic-redos",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.dlint-catastrophic-redos"
+              },
+              "fullDescription": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Regex `$X` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/](https://r2c.dev/blog/2020/finding-python-redos-bugs-at-scale-using-dlint-and-r2c/)\n - [https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/](https://r2c.dev/blog/2020/improving-redos-detection-with-dlint-and-r2c/)\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.dlint-catastrophic-redos"
                 ]
               }
             },
@@ -783,30 +783,6 @@
               }
             },
             {
-              "id": "51037c2f-1692-35fd-9c27-e251a0cbf931",
-              "name": "resources.rules.tempfile-without-flush",
-              "shortDescription": {
-                "text": "Opengrep Finding: resources.rules.tempfile-without-flush"
-              },
-              "fullDescription": {
-                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'."
-              },
-              "defaultConfiguration": {
-                "enabled": true,
-                "level": "error"
-              },
-              "help": {
-                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
-                "markdown": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
-              },
-              "properties": {
-                "precision": "very-high",
-                "tags": [
-                  "resources.rules.tempfile-without-flush"
-                ]
-              }
-            },
-            {
               "id": "22087730-12a6-3f0b-be6c-0fa20f03f4f4",
               "name": "resources.rules.return-not-in-function",
               "shortDescription": {
@@ -827,6 +803,30 @@
                 "precision": "very-high",
                 "tags": [
                   "resources.rules.return-not-in-function"
+                ]
+              }
+            },
+            {
+              "id": "51037c2f-1692-35fd-9c27-e251a0cbf931",
+              "name": "resources.rules.tempfile-without-flush",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.tempfile-without-flush"
+              },
+              "fullDescription": {
+                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Using '$F.name' without '.flush()' or '.close()' may cause an error because the file may not exist when '$F.name' is used. Use '.flush()' or close the file before using '$F.name'.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high",
+                "tags": [
+                  "resources.rules.tempfile-without-flush"
                 ]
               }
             },
@@ -988,6 +988,37 @@
       "language": "en-US",
       "results": [
         {
+          "ruleId": "97b4ebed-551d-323a-aa8b-5c8583734501",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 1,
+                  "endLine": 14,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "RUN git clone https://github.com/ROCm/AMDMIGraphX.git \\\n    && cd AMDMIGraphX && git checkout ${MIGRAPHX_BRANCH} \\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "8d367e50e35761b926f24b347a3d048bb3d45a6c6ee8ccc7b4ff393ac2c97727d657193320b7c89a39455a227b43d9d617dd00cab4ff4da6b36962a79493dcf2_0"
+          },
+          "properties": {}
+        },
+        {
           "ruleId": "adca1cc4-87db-36c2-901d-5f2decbf0f53",
           "kind": "fail",
           "level": "warning",
@@ -1015,6 +1046,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "8d367e50e35761b926f24b347a3d048bb3d45a6c6ee8ccc7b4ff393ac2c97727d657193320b7c89a39455a227b43d9d617dd00cab4ff4da6b36962a79493dcf2_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "b57c664c-1ca7-3882-9529-6ba7bf4898fc",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Images should be tagged with an explicit version to produce deterministic container images."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 10,
+                  "snippet": {
+                    "text": "FROM rocm/pytorch:rocm6.4_ubuntu22.04_py3.10_pytorch_release_2.6.0"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "bf01890fc9df1e916e7ebd07720a9d3cb5c6d1514174e80408670b71420522fab69cc63a0d17e946abcb98db8fec0baeeab65d83841d9847616aa58ae55ab3ec_0"
           },
           "properties": {}
         },
@@ -1050,64 +1112,33 @@
           "properties": {}
         },
         {
-          "ruleId": "97b4ebed-551d-323a-aa8b-5c8583734501",
+          "ruleId": "874ebf10-b82d-3f92-bfc2-f3da261a710f",
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "Dockerfile",
+                  "uri": "ci/base.Dockerfile",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 13,
+                  "startLine": 9,
                   "startColumn": 1,
-                  "endLine": 14,
-                  "endColumn": 10,
+                  "endLine": 9,
+                  "endColumn": 22,
                   "snippet": {
-                    "text": "RUN git clone https://github.com/ROCm/AMDMIGraphX.git \\\n    && cd AMDMIGraphX && git checkout ${MIGRAPHX_BRANCH} \\"
+                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
                   }
                 }
               }
             }
           ],
           "fingerprints": {
-            "matchBasedId/v1": "8d367e50e35761b926f24b347a3d048bb3d45a6c6ee8ccc7b4ff393ac2c97727d657193320b7c89a39455a227b43d9d617dd00cab4ff4da6b36962a79493dcf2_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "b57c664c-1ca7-3882-9529-6ba7bf4898fc",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Images should be tagged with an explicit version to produce deterministic container images."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 10,
-                  "snippet": {
-                    "text": "FROM rocm/pytorch:rocm6.4_ubuntu22.04_py3.10_pytorch_release_2.6.0"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "bf01890fc9df1e916e7ebd07720a9d3cb5c6d1514174e80408670b71420522fab69cc63a0d17e946abcb98db8fec0baeeab65d83841d9847616aa58ae55ab3ec_0"
+            "matchBasedId/v1": "c13a01711424cc6ed9d5b78d540e18e3abc7050f95fe8694f1d80fc5ef839ae833d73930056e4d92fadd63a9c171117f6132b5cfd2682d6073593767f7723b9e_0"
           },
           "properties": {}
         },
@@ -1170,37 +1201,6 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "0f944f11dd4518e54779aaafe728ea834a2d09fc5da4cfaf0c585393977d31e21f6fc8481acc1f8fe659aff04d0f119ff129814054292c414048dd26d2c234ab_0"
-          },
-          "properties": {}
-        },
-        {
-          "ruleId": "874ebf10-b82d-3f92-bfc2-f3da261a710f",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "This 'pip install' is missing '--no-cache-dir'. This flag prevents\npackage archives from being kept around, thereby reducing image size.\nAdd '--no-cache-dir'.\n"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "ci/base.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 1,
-                  "endLine": 9,
-                  "endColumn": 22,
-                  "snippet": {
-                    "text": "RUN pip install https://github.com/RadeonOpenCompute/rbuild/archive/master.tar.gz"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "c13a01711424cc6ed9d5b78d540e18e3abc7050f95fe8694f1d80fc5ef839ae833d73930056e4d92fadd63a9c171117f6132b5cfd2682d6073593767f7723b9e_0"
           },
           "properties": {}
         },
@@ -1670,37 +1670,6 @@
           "properties": {}
         },
         {
-          "ruleId": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/torchbench.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 26,
-                  "startColumn": 1,
-                  "endLine": 29,
-                  "endColumn": 7,
-                  "snippet": {
-                    "text": "RUN curl -o torchaudio.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/audio.txt &&\\\n    torchaudio_hash=\"$(cat torchaudio.txt)\" && \\\n    git clone https://github.com/pytorch/audio.git &&\\\n    cd audio &&\\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "117226cb-d3f1-3c3c-94af-80be3a2c829c",
           "kind": "fail",
           "level": "warning",
@@ -1728,6 +1697,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_1"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "1f70cdea-7a7d-3588-a057-2b653e91bfd0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/torchbench.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 29,
+                  "endColumn": 7,
+                  "snippet": {
+                    "text": "RUN curl -o torchaudio.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/audio.txt &&\\\n    torchaudio_hash=\"$(cat torchaudio.txt)\" && \\\n    git clone https://github.com/pytorch/audio.git &&\\\n    cd audio &&\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_0"
           },
           "properties": {}
         },
@@ -1763,37 +1763,6 @@
           "properties": {}
         },
         {
-          "ruleId": "f702c98a-e0bd-329e-942e-ce233d542924",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "docker/torchbench.Dockerfile",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 53,
-                  "startColumn": 1,
-                  "endLine": 56,
-                  "endColumn": 5,
-                  "snippet": {
-                    "text": "RUN curl -o torchbench.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/torchbench.txt &&\\\n  torchbench_hash=$(cat torchbench.txt) &&\\\n  git clone https://github.com/pytorch/benchmark.git &&\\\n  cd benchmark &&\\"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_3"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "5c56b80e-0a42-33da-9bb6-8c4869fd4d65",
           "kind": "fail",
           "level": "warning",
@@ -1825,37 +1794,6 @@
           "properties": {}
         },
         {
-          "ruleId": "7c649040-c985-36c5-9630-4d5648496b23",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Regex `r'version\\s*([\\d.]+)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "py/setup.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 61,
-                  "startColumn": 17,
-                  "endLine": 61,
-                  "endColumn": 63,
-                  "snippet": {
-                    "text": "                re.search(r'version\\s*([\\d.]+)', out.decode()).group(1))"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "25d53e5ed4a00aeb84750ae4667d5162be6570a6cc799a08a8f6abb39313679b58d2084c6c23c23b9e7cbb7b53a70260427fc48a15161ab1045142e73bc94602_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "29a76deb-6228-3ce7-96fc-d94ac6b90426",
           "kind": "fail",
           "level": "warning",
@@ -1883,6 +1821,68 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "ba59c6f1c7772334ba2527de8e1ab3821f368f9bb342447a5dbe182f3ba05009c8992fd3fee003f284ebe5b396d6072d0c7c5e2d164cc531f851f34391df1375_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "f702c98a-e0bd-329e-942e-ce233d542924",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Use 'WORKDIR' instead of 'RUN cd ...'. Using 'RUN cd ...' may not work as expected in a conatiner."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "docker/torchbench.Dockerfile",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 56,
+                  "endColumn": 5,
+                  "snippet": {
+                    "text": "RUN curl -o torchbench.txt https://raw.githubusercontent.com/pytorch/pytorch/${PYTORCH_BRANCH}/.github/ci_commit_pins/torchbench.txt &&\\\n  torchbench_hash=$(cat torchbench.txt) &&\\\n  git clone https://github.com/pytorch/benchmark.git &&\\\n  cd benchmark &&\\"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "49a3ec84f91c25868ca36ced9d95807e547c459f88849e984fa705742c3a885f73c26283b6fcf192371a499375ef22fafdcc0ee17d57b341421510817d53c7ba_3"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "7c649040-c985-36c5-9630-4d5648496b23",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Regex `r'version\\s*([\\d.]+)'` may be vulnerable to catastrophic backtracking, which may lead to denial of service attacks. (This rule only matches regex usage, not actual REDoS patterns. For full detection, use Semgrep Pro Engine.)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/setup.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 17,
+                  "endLine": 61,
+                  "endColumn": 63,
+                  "snippet": {
+                    "text": "                re.search(r'version\\s*([\\d.]+)', out.decode()).group(1))"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "25d53e5ed4a00aeb84750ae4667d5162be6570a6cc799a08a8f6abb39313679b58d2084c6c23c23b9e7cbb7b53a70260427fc48a15161ab1045142e73bc94602_0"
           },
           "properties": {}
         },
@@ -1980,37 +1980,6 @@
           "properties": {}
         },
         {
-          "ruleId": "51037c2f-1692-35fd-9c27-e251a0cbf931",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Using 'f.name' without '.flush()' or '.close()' may cause an error because the file may not exist when 'f.name' is used. Use '.flush()' or close the file before using 'f.name'."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "py/torch_migraphx/fx/passes/pass_utils.py",
-                  "uriBaseId": "%SRCROOT%"
-                },
-                "region": {
-                  "startLine": 158,
-                  "startColumn": 71,
-                  "endLine": 158,
-                  "endColumn": 77,
-                  "snippet": {
-                    "text": "            _LOGGER.info(f\"== Log pass {pass_} before/after graph to {f.name}\")"
-                  }
-                }
-              }
-            }
-          ],
-          "fingerprints": {
-            "matchBasedId/v1": "a724f292ced35ddfa40ef505cf5ba5b8970a605230402022906a7ff37af601b695a925fee2ed2ef1e0ad89017f646b4b996e10740935b4863dca52049793d5ff_0"
-          },
-          "properties": {}
-        },
-        {
           "ruleId": "22087730-12a6-3f0b-be6c-0fa20f03f4f4",
           "kind": "fail",
           "level": "warning",
@@ -2038,6 +2007,37 @@
           ],
           "fingerprints": {
             "matchBasedId/v1": "5485a71f875f99377f3834d36dd853f5e6c8fca97e8d49b976fed6e5afb7d3331611ef3b300f4a69ac073d0f91b65a8830a80467a40354efef47e22b02d72203_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "51037c2f-1692-35fd-9c27-e251a0cbf931",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Using 'f.name' without '.flush()' or '.close()' may cause an error because the file may not exist when 'f.name' is used. Use '.flush()' or close the file before using 'f.name'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "py/torch_migraphx/fx/passes/pass_utils.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 71,
+                  "endLine": 158,
+                  "endColumn": 77,
+                  "snippet": {
+                    "text": "            _LOGGER.info(f\"== Log pass {pass_} before/after graph to {f.name}\")"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a724f292ced35ddfa40ef505cf5ba5b8970a605230402022906a7ff37af601b695a925fee2ed2ef1e0ad89017f646b4b996e10740935b4863dca52049793d5ff_0"
           },
           "properties": {}
         },
